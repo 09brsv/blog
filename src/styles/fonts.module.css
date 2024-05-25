@@ -1,0 +1,16 @@
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/Roboto-Regular.ttf');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'RammettoOne';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/RammettoOne-Regular.ttf');
+  font-display: swap;
+}
