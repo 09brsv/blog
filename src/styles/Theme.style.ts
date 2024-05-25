@@ -8,7 +8,8 @@ export const theme: DefaultTheme = {
 		blueBgDark: "#344455",
 		bgCircle: "#D9D9D9",
 		titleText: "#344455",
-		border: "#9EB5CF",
+		border: "3px solid #9EB5CF",
+		borderDark: "solid #344455",
 		white: "#FFFFFF",
 		black: "#000000",
 		dark: "#282526",
@@ -23,5 +24,9 @@ export const theme: DefaultTheme = {
 	},
 	margins: {
 		pageTop: "30px",
+	},
+	radius: {
+		circular: "50%",
+		container: "2rem",
 	},
 }

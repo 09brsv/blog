@@ -1,10 +1,18 @@
-import { LogoIcon } from "config/icons/icons"
+import { Advantages, Attempts, Header, Presentation } from "components"
+import * as S from "./style"
 
 const Home = () => {
 	return (
-		<div>
-			<p>Hello World</p> <LogoIcon />
-		</div>
+		<S.HomeContainer>
+			<Header />
+			<section>
+				<div>
+					<Presentation />
+					<Attempts />
+				</div>
+				<Advantages text="Our Advantages" radius={150} />
+			</section>
+		</S.HomeContainer>
 	)
 }
 
