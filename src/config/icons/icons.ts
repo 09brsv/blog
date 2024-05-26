@@ -1,7 +1,11 @@
+import { ReactComponent as ArrowDownLeft } from "assets/icons/ArrowDownLeft.svg"
+import { ReactComponent as ArrowDownRight } from "assets/icons/ArrowDownRight.svg"
+import { ReactComponent as ArrowSmallDownRight } from "assets/icons/ArrowSmallDownRight.svg"
+import { ReactComponent as ArrowSmallRight } from "assets/icons/ArrowSmallRight.svg"
 import { ReactComponent as CursorLeftDownIcon } from "assets/icons/CursorLeftDown.svg"
 import { ReactComponent as CursorRightDownIcon } from "assets/icons/CursorRightDown.svg"
-import { ReactComponent as CurvedArrowDownLeft } from "assets/icons/CurvedArrowDownLeft.svg"
 import { ReactComponent as CurvedArrowRightDownIcon } from "assets/icons/CurvedArrowRightDown.svg"
+import { ReactComponent as IntersectIcon } from "assets/icons/Intersect.svg"
 import { ReactComponent as LogoIcon } from "assets/icons/Logo.svg"
 import { ReactComponent as MobileMenuIcon } from "assets/icons/MobileMenu.svg"
 import { ReactComponent as RectangleMediumLeftIcon } from "assets/icons/RectangleMediumLeft.svg"
@@ -18,6 +22,10 @@ export {
 	RectangleSmallLeftIcon,
 	RectangleSmallRightIcon,
 	LogoIcon,
+	IntersectIcon,
 	MobileMenuIcon,
-	CurvedArrowDownLeft,
+	ArrowDownLeft,
+	ArrowDownRight,
+	ArrowSmallDownRight,
+	ArrowSmallRight,
 }
