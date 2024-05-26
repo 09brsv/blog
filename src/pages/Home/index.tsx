@@ -1,4 +1,4 @@
-import { Advantages, Attempts, Header, Presentation } from "components"
+import { Advantages, Attempts, Header, Marketing, Presentation } from "components"
 import * as S from "./style"
 
 const Home = () => {
@@ -11,6 +11,9 @@ const Home = () => {
 					<Attempts />
 				</div>
 				<Advantages text="Our Advantages" radius={150} />
+			</section>
+			<section>
+				<Marketing />
 			</section>
 		</S.HomeContainer>
 	)

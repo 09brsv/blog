@@ -1,5 +1,6 @@
 import { ReactComponent as CursorLeftDownIcon } from "assets/icons/CursorLeftDown.svg"
 import { ReactComponent as CursorRightDownIcon } from "assets/icons/CursorRightDown.svg"
+import { ReactComponent as CurvedArrowDownLeft } from "assets/icons/CurvedArrowDownLeft.svg"
 import { ReactComponent as CurvedArrowRightDownIcon } from "assets/icons/CurvedArrowRightDown.svg"
 import { ReactComponent as LogoIcon } from "assets/icons/Logo.svg"
 import { ReactComponent as MobileMenuIcon } from "assets/icons/MobileMenu.svg"
@@ -18,4 +19,5 @@ export {
 	RectangleSmallRightIcon,
 	LogoIcon,
 	MobileMenuIcon,
+	CurvedArrowDownLeft,
 }
