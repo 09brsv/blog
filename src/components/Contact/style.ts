@@ -5,7 +5,7 @@ export const ContactContainer = styled.div`
   position: relative;
 	margin-top: 5rem;
 	padding: 3rem;
-  border: ${({ theme }) => theme.colors.border};
+  border: 3px solid ${({ theme }) => theme.colors.border};
   border-radius: ${({ theme }) => theme.radius.container};
 `
 
@@ -18,7 +18,7 @@ export const ContactCircleContainer = styled.div`
 	padding: 0.3rem;
 	height: 105px;
 	width: 100%;
-	border: ${({ theme }) => theme.colors.border};
+	border: 3px solid ${({ theme }) => theme.colors.border};
 	border-radius: 54px;
 `
 
@@ -83,7 +83,7 @@ export const ContactBoxInput = styled.div`
 
 export const ContactInput = styled.input`
 	padding: .7rem 1rem;
-	border: ${({ theme }) => theme.colors.border};
+	border: 3px solid ${({ theme }) => theme.colors.border};
 	border-radius: 10px;
   width: 100%;
 

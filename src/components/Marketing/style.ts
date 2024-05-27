@@ -35,7 +35,7 @@ export const MarketingDescriptionContainer = styled.div`
   background-color: ${({ theme }) => theme.colors.white};
   border-radius: ${({ theme }) => theme.radius.container};
 	align-items: center;
-	padding: 2rem 1.5rem;
+	padding: 2rem;
   margin: 2rem 0 4rem 0;
 	gap: 1.5rem;
 

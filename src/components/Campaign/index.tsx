@@ -1,5 +1,5 @@
 import { Card } from "components/Card"
-import { ArrowDownRight, CursorLeftDownIcon, CursorRightDownIcon, IntersectIcon } from "config/icons/icons"
+import { ArrowDownRightIcon, CursorLeftDownIcon, CursorRightDownIcon, IntersectIcon } from "config/icons/icons"
 import * as S from "./style"
 
 export const Campaign = () => {
@@ -18,7 +18,7 @@ export const Campaign = () => {
 			id: 3,
 			title: "Brand Development",
 			description:
-				"We build a strong personal brand identity with consistent writing style, visual appearance, and values.Get real-time feedback on your campaign. Know what you want to achieve.",
+				"We build a strong personal brand identity with consistent writing style, visual appearance, and values.",
 		},
 	]
 
@@ -27,7 +27,7 @@ export const Campaign = () => {
 			<S.CampaignWrapper />
 			<h1>Improve your Business</h1>
 			<S.CampaignBoxDescription>
-				<ArrowDownRight width={70} />
+				<ArrowDownRightIcon width={70} />
 				<S.CampaignDescription>
 					Improve the Quality of your Business and Feel the Benefits with Us
 				</S.CampaignDescription>
@@ -42,9 +42,9 @@ export const Campaign = () => {
 					<S.CampaignCircle />
 					<S.CampaignCircle style={{ marginLeft: "-1.5rem" }}>
 						<S.CampaignBifurcation>
-							<IntersectIcon width={100} height={2000} style={{ position: "relative" }} />
-							<CursorRightDownIcon width={10} style={{ position: "absolute", top: "30%" }} />
-							<CursorLeftDownIcon width={10} style={{ position: "absolute", top: "50%" }} />
+							<IntersectIcon width={200} height={100} style={{ position: "relative" }} />
+							<CursorRightDownIcon width={13} style={{ position: "absolute", top: "30%" }} />
+							<CursorLeftDownIcon width={13} style={{ position: "absolute", top: "50%" }} />
 						</S.CampaignBifurcation>
 					</S.CampaignCircle>
 				</S.CampaingBoxCircle>
@@ -54,7 +54,7 @@ export const Campaign = () => {
 							key={item.id}
 							title={item.title}
 							description={item.description}
-							style={{ marginRight: "2rem", placeSelf: "end" }}
+							style={{ marginRight: ".7rem", placeSelf: "end" }}
 						/>
 					))}
 			</S.CampaignCardContainer>

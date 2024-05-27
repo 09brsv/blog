@@ -18,13 +18,13 @@ export const Advantages = ({ text, radius }: { text: string; radius: number }) =
 				))}
 				<OvalCircle rotate={-45} />
 				<S.AdvantagesWrapperArrow>
-					<CurvedArrowRightDownIcon width={55} />
+					<CurvedArrowRightDownIcon width={75} />
 				</S.AdvantagesWrapperArrow>
 				<S.AdvantagesWrapper>
 					<S.AdvantagesWrapperList>
 						{listAdvantages.map((item, index) => (
 							<S.AdvantagesWrapperListItem key={index}>
-								<Check fill="white" textColor="black" />
+								<Check fill="white" textColor="var(--blue-bg-light)" size={20} />
 								<span>{item}</span>
 							</S.AdvantagesWrapperListItem>
 						))}

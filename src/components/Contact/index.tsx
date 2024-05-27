@@ -1,6 +1,6 @@
 import { Button } from "components/Button"
 import { Check } from "components/Check"
-import { ArrowSmallDownRight, ArrowSmallRight } from "config/icons/icons"
+import { ArrowSmallDownRightIcon, ArrowSmallRightIcon } from "config/icons/icons"
 import * as S from "./style"
 
 export const Contact = () => {
@@ -8,23 +8,23 @@ export const Contact = () => {
 		{
 			id: 1,
 			description: "01",
-			icon: ArrowSmallDownRight,
+			icon: ArrowSmallDownRightIcon,
 		},
 		{
 			id: 2,
 			description: "02",
-			icon: ArrowSmallRight,
+			icon: ArrowSmallRightIcon,
 		},
 		{
 			id: 3,
 			description: "03",
-			icon: ArrowSmallRight,
+			icon: ArrowSmallRightIcon,
 		},
 	]
 	return (
 		<S.ContactContainer>
 			<h1 style={{ marginBottom: "1rem" }}>Let’s Begin the Journey with Us</h1>
-			<p style={{ textAlign: "center" }}>
+			<p style={{ textAlign: "center", letterSpacing: "1px" }}>
 				Make Your Choice, our partners are very experienced in their field and have the potential to increase your
 				business
 			</p>

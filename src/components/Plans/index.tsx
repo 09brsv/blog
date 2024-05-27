@@ -43,7 +43,7 @@ export const Plans = () => {
 
 	return (
 		<S.PlansContainer>
-			<h1>Choose a Package According to Your Needs</h1>
+			<h1 style={{ padding: "0 1.5rem" }}>Choose a Package According to Your Needs</h1>
 			<S.PlansCardContainer>
 				{data.map((plan, index) => {
 					setStyleButton(index)
@@ -58,7 +58,7 @@ export const Plans = () => {
 										<S.PlansItem key={idx}>
 											<Check fill={index === 1 ? "var(--white)" : "var(--blue-bg-light)"} />
 											<small />
-											<span>{item}</span>
+											<span style={{ marginLeft: ".5rem" }}>{item}</span>
 										</S.PlansItem>
 									))}
 								</S.PlansBoxItems>

@@ -17,15 +17,21 @@ export const Attempts = () => {
 	return (
 		<S.AttemptsContainer>
 			<S.AttemptsBox>
-				<S.AttemptsQuantity>35.2</S.AttemptsQuantity>
+				<S.AttemptsQuantity>
+					35.2 <S.AttemptsOperator>+</S.AttemptsOperator>
+				</S.AttemptsQuantity>
 				<S.AttemptsDescription>Reviews</S.AttemptsDescription>
 			</S.AttemptsBox>
 			<S.AttemptsBox>
-				<S.AttemptsQuantity>{customersFormat(20000)}</S.AttemptsQuantity>
+				<S.AttemptsQuantity>
+					{customersFormat(20000)} <S.AttemptsOperator>+</S.AttemptsOperator>
+				</S.AttemptsQuantity>
 				<S.AttemptsDescription>Customers</S.AttemptsDescription>
 			</S.AttemptsBox>
 			<S.AttemptsBox>
-				<S.AttemptsQuantity>89</S.AttemptsQuantity>
+				<S.AttemptsQuantity>
+					89 <S.AttemptsOperator>%</S.AttemptsOperator>
+				</S.AttemptsQuantity>
 				<S.AttemptsDescription>Agency Rate</S.AttemptsDescription>
 			</S.AttemptsBox>
 			<S.AttemptsBox>

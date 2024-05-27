@@ -1,10 +1,11 @@
 import { Button } from "components/Button"
-import { IntersectIcon, RectangleMediumRightIcon } from "config/icons/icons"
+import { RectangleMediumRightIcon } from "config/icons/icons"
 import styled from "styled-components"
 
 export const CampaignContainer = styled.div`
 	position: relative;
 	padding-top: ${({ theme }) => theme.paddings.pageTop};
+	padding-bottom: 3rem;
   margin-right: 2rem;
 `
 
@@ -50,7 +51,7 @@ export const CampaignWrapperLine = styled.div`
 	height: 95%;
 	z-index: -1;
 	border-radius: ${({ theme }) => theme.radius.container};
-	border: ${({ theme }) => theme.colors.border};
+	border: 3px solid ${({ theme }) => theme.colors.border};
 
   &::after {
     content: "";
@@ -84,13 +85,13 @@ export const CampaingBoxCircle = styled.div`
 	align-items: center;
 	justify-content: center;
   margin-bottom: 2rem;
-  margin-right: 4rem;
+  margin-right: 0;
 `
 
 export const CampaignCircle = styled.div`
 	position: relative;
-	width: 140px;
-	height: 140px;
+	width: 170px;
+	height: 170px;
 	border-radius: 50%;
 	background-color: ${({ theme }) => theme.colors.bgCircle};
 `
@@ -101,9 +102,10 @@ export const CampaignBifurcation = styled.div`
 	justify-content: center;
 	flex-direction: column;
 	position: absolute;
-	top: 2rem;
-	width: 27px;
-	height: 75px;
+	top: 2.5rem;
+	left: -.5rem;
+	width: 40px;
+	height: 90px;
 	box-shadow: 0 0 0 4px white;
 	border-radius: 50%;
   background-color: ${({ theme }) => theme.colors.white};

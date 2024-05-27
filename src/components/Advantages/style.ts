@@ -4,7 +4,7 @@ export const AdvantagesContainer = styled.div`
 	padding: 2rem 1rem 0 1rem;
 	display: flex;
 	flex-direction: column;
-	border: ${({ theme }) => theme.colors.border};
+	border: 3px solid ${({ theme }) => theme.colors.border};
 	border-radius: ${({ theme }) => theme.radius.container};
 	align-items: center;
 	justify-content: center;
@@ -34,8 +34,8 @@ export const AdvantagesCircularText = styled.span`
 
 export const AdvantagesWrapperArrow = styled.div`
 	position: absolute;
-	bottom: 70%;
-	right: 10%;
+	bottom: 75%;
+	right: 0;
 	rotate: -45deg;
 `
 
@@ -73,6 +73,7 @@ export const AdvantagesWrapperListItem = styled.li`
 	span {
 		font-family: "RammettoOne";
 		font-size: 12px;
+		letter-spacing: .2em;
 		font-weight: 400;
 		color: ${({ theme }) => theme.colors.white};
 		text-transform: uppercase;

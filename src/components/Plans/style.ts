@@ -16,7 +16,7 @@ export const PlansCardContainer = styled.div`
   width: 108%;
   margin-left: -4%;
   height: 1050px;
-  margin-top: 15rem;
+  margin-top: 11rem;
   background-color: ${({ theme }) => theme.colors.blueBgLight};
 `
 
@@ -65,7 +65,7 @@ export const PlansItem = styled.li`
 
 export const PlansPrice = styled.h3`
   font-family: "RammettoOne";
-  font-size: 1.5em;
+  font-size: 1.8em;
   font-weight: 800;
   padding-top: .5rem;
   text-align: center;

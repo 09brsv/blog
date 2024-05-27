@@ -1,16 +1,24 @@
+import { ButtonHTMLAttributes, ReactNode } from "react"
 import * as S from "./style"
 
 type TButton = {
-	children: string
+	children: ReactNode
 	style?: React.CSSProperties
+	className?: string
 	bgColor?: string
 	textColor?: string
 	borderColor?: string
-}
+} & ButtonHTMLAttributes<HTMLButtonElement>
 
-export const Button = ({ children, bgColor, textColor, borderColor, style }: TButton) => {
+export const Button = ({ children, bgColor, textColor, borderColor, style, className, ...props }: TButton) => {
 	return (
-		<S.Button style={style} bgColor={bgColor} textColor={textColor} borderColor={borderColor}>
+		<S.Button
+			className={className}
+			style={style}
+			bgColor={bgColor}
+			textColor={textColor}
+			borderColor={borderColor}
+			{...props}>
 			{children}
 		</S.Button>
 	)

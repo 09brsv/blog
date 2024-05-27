@@ -25,3 +25,9 @@ export const AttemptsDescription = styled.p`
 	text-transform: uppercase;
   font-size: 0.5em;
 `
+
+export const AttemptsOperator = styled.span`
+	font-size: .7em;
+	font-family: ${({ theme }) => theme.fonts.roboto};
+	color: ${({ theme }) => theme.colors.blueBgLight};
+`
