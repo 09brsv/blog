@@ -24,6 +24,8 @@
   "scripts": {
     "start": "react-scripts start",
     "server": "node api/server.js",
+    "start:dev": "npm run server && npm run start"
+    "start:build": "npm run server && npm run build"
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
