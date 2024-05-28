@@ -17,9 +17,11 @@ export const CssGlobal = createGlobalStyle`
     flex-direction: column;
     min-height: 100%;
     overflow-x: hidden;
+  	scroll-behavior: smooth;
   }
   body {
     display: flex;
+    overflow-x: hidden;
     flex: 1;
   }
   /* Globals */

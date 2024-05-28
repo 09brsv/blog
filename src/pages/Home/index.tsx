@@ -17,16 +17,18 @@ const Home = () => {
 		<S.HomeContainer>
 			<Header />
 			<main>
-				<section className="section-presentation">
+				<section className="section-presentation" id="home">
 					<Presentation />
 					<Advantages text="Our Advantages" radius={150} />
 				</section>
-				<section>
+				<section id="about">
 					<Marketing />
 				</section>
-				<section>
+				<section id="services">
 					<Campaign />
-					<Contact />
+					<section id="contact">
+						<Contact />
+					</section>
 					<Plans />
 				</section>
 				<section>
