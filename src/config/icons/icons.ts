@@ -1,6 +1,9 @@
 import { ReactComponent as ArrowDownLeftIcon } from "assets/icons/ArrowDownLeft.svg"
 import { ReactComponent as ArrowDownRightIcon } from "assets/icons/ArrowDownRight.svg"
+import { ReactComponent as ArrowLargeRightIcon } from "assets/icons/ArrowLargeRight.svg"
 import { ReactComponent as ArrowMediumDownLeftIcon } from "assets/icons/ArrowMediumDownLeft.svg"
+import { ReactComponent as ArrowMediumRightDownIcon } from "assets/icons/ArrowMediumRightDown.svg"
+import { ReactComponent as ArrowMediumRightDownRightIcon } from "assets/icons/ArrowMediumRightDownRight.svg"
 import { ReactComponent as ArrowRightIcon } from "assets/icons/ArrowRight.svg"
 import { ReactComponent as ArrowSmallDownRightIcon } from "assets/icons/ArrowSmallDownRight.svg"
 import { ReactComponent as ArrowSmallRightIcon } from "assets/icons/ArrowSmallRight.svg"
@@ -36,8 +39,11 @@ export {
 	ArrowRightIcon,
 	ArrowDownLeftIcon,
 	ArrowDownRightIcon,
+	ArrowLargeRightIcon,
 	ArrowSmallDownRightIcon,
 	ArrowSmallRightIcon,
 	ArrowMediumDownLeftIcon,
+	ArrowMediumRightDownRightIcon,
+	ArrowMediumRightDownIcon,
 	TwitterIcon,
 }
