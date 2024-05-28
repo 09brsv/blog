@@ -11,11 +11,15 @@ Este é um projeto de teste técnico para uma vaga de front-end júnior. Consist
 - Axios v1.7.2
 - Docker v26.1.3
 
-## Como Acessar o Projeto
-
-Você pode acessar o projeto em [https://blog-bruno-batista-s-projects.vercel.app](https://blog-bruno-batista-s-projects.vercel.app).
-
 ## Scripts necessários para rodar o projeto em uma máquina local
+
+Script padrão para rodar o projeto usando o npm
+
+```bash
+npm run start:dev
+``` 
+
+ou então você pode rodar os scripts separadamente 
 
 ### Front-end
 
