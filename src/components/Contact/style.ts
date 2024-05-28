@@ -13,6 +13,13 @@ export const ContactContainer = styled.div`
 
 	@media ${device.md} {
 		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 3rem;
+		justify-items: center;
+	}
+
+	@media ${device.lg} {
+		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-gap: 0;
 		padding: 0 5rem 3rem 5rem;
@@ -152,9 +159,13 @@ export const ContactInput = styled.input`
 export const ContactButton = styled(Button)`
 	margin-top: 1rem;
 	width: 100%;
-	max-width: 240px;
-
+	
 	@media ${device.md} {
-		margin-left: 3rem;
+		margin-left: 3rem!important;
+		width: 200px;
+	}
+	@media ${device.lg} {
+		max-width: 240px;
+		width: unset;
 	}
 `

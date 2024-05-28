@@ -43,12 +43,17 @@ export const AdvantagesCircularText = styled.span`
 	white-space: nowrap; /* Evita quebra de palavras */
 
 	@media ${device.md} {
-		top: 89%;
-		left: -7rem;
+		top: 78%;
+		left: -4rem;
 		transform-origin: 134% 280%;
 		transform: rotate(calc(var(--i) * 152deg / var(--total)))
 			translate(-52px, -12px)
 			rotate(calc(286deg - var(--i) * 62deg / var(--total)));
+	}
+
+	@media ${device.lg} {
+		top: 89%;
+		left: -7rem;
 	}
 `
 
@@ -66,9 +71,9 @@ export const AdvantagesWrapperCircle = styled.div`
 
 	@media ${device.md} {
 		flex-direction: row;
-    left: 0;
-    bottom: 6rem;
-    margin-left: 8rem;
+		left: 0;
+		bottom: 6rem;
+		margin-left: 8rem;
 	}
 `
 

@@ -9,7 +9,7 @@ export const CampaignContainer = styled.div`
 	padding-bottom: 3rem;
 	margin-right: 2rem;
 
-	@media ${device.md} {
+	@media ${device.lg} {
 		padding-right: 3rem;
 		padding-left: 3rem;
 	}
@@ -48,7 +48,7 @@ export const CampaignCardContainer = styled.div`
 	padding: 2rem 0;
 	flex-direction: column;
 
-	@media ${device.md} {
+	@media ${device.lg} {
 		flex-direction: row;
 		justify-content: space-between;
 		margin-bottom: 5rem;
@@ -59,13 +59,16 @@ export const CampaignCardContainer = styled.div`
 export const CampaignScreenMediumOnly = styled.div`
 	display: none;
 
-	@media ${device.md} {
+	@media ${device.lg} {
 		display: flex;
 	}
 `
 
 export const CampaignSmallScreenOnly = styled.div`
 	@media ${device.md} {
+		padding-right: 15rem;
+	}
+	@media ${device.lg} {
 		display: none;
 	}
 `
@@ -90,7 +93,7 @@ export const CampaignWrapperLine = styled.div`
 		background: white;
 	}
 
-	@media ${device.md} {
+	@media ${device.lg} {
 		width: 85%;
 		top: 3rem;
 		height: 97%;
@@ -118,7 +121,7 @@ export const CampaignButtonLine = styled(Button)`
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
-	bottom: -1rem;
+	bottom: -4rem;
 	padding-left: 3rem;
 	padding-right: 3rem;
 `
@@ -129,12 +132,16 @@ export const CampaingBoxCircle = styled.div`
 	justify-content: center;
 	margin-bottom: 2rem;
 	margin-right: 0;
+
+	@media ${device.md} {
+		padding-right: 15rem;
+	}
 `
 
 export const CampaignRectangleSmallRight = styled(RectangleSmallRightIcon)`
 	display: none;
 
-	@media ${device.md} {
+	@media ${device.lg} {
 		display: block;
 		position: absolute;
 		top: 23%;

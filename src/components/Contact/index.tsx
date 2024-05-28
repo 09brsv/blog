@@ -1,4 +1,3 @@
-import { Button } from "components/Button"
 import { Check } from "components/Check"
 import { ArrowSmallDownRightIcon, ArrowSmallRightIcon } from "config/icons/icons"
 import * as S from "./style"

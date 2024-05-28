@@ -9,7 +9,7 @@ export const AttemptsContainer = styled.div`
 
 	@media ${device.md} {
 		justify-content: flex-start;
-		gap: 5rem;
+		gap: 3rem;
 	}
 `
 

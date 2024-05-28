@@ -111,6 +111,10 @@ export const ServicesButton = styled(Button)`
 		cursor: default;
 		width: fit-content;
 	}
+
+	@media ${device.lg} {
+		width: 200px;
+	}
 `
 
 export const ServicesListBox = styled.div<{ closed: string }>`

@@ -34,4 +34,10 @@ export const NavItem = styled.li`
   font-size: 14px;
   font-weight: 500;
   color: ${({ theme }) => theme.colors.primaryText};
+
+  & .contact {
+    &:hover {
+      opacity: .8;
+    }
+  }
 `

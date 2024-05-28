@@ -13,6 +13,6 @@ export const Button = styled.button<{ bgColor?: string; textColor?: string; bord
   text-transform: uppercase;
 
   &:hover, &:focus, &:active {
-    opacity: 1;
+    opacity: .8;
   }
 `

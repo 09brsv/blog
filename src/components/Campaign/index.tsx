@@ -42,8 +42,8 @@ export const Campaign = () => {
 			<S.CampaignCardContainer>
 				<S.CampaignWrapperLine>
 					<S.CampaignRectangleLine />
-					<S.CampaignButtonLine>view more</S.CampaignButtonLine>
 				</S.CampaignWrapperLine>
+				<S.CampaignButtonLine>view more</S.CampaignButtonLine>
 				<S.CampaingBoxCircle>
 					<S.CampaignRectangleSmallRight width={100} />
 					<S.CampaignCircle />

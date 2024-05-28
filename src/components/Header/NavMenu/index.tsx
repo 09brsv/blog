@@ -21,7 +21,7 @@ export const NavMenu = ({ isOpen = false }) => {
 					</a>
 				</S.NavItem>
 				<S.NavItem>
-					<a href="#contact">
+					<a href="#contact" className="contact">
 						<Button bgColor="var(--blue-bg-dark)" color="var(--white)">
 							Contact Us
 						</Button>
