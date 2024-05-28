@@ -1,32 +1,24 @@
+import { getCampaignsList } from "actions"
 import { Card } from "components/Card"
-import {
-	ArrowDownRightIcon,
-	CursorLeftDownIcon,
-	CursorRightDownIcon,
-	IntersectIcon,
-	RectangleSmallRightIcon,
-} from "config/icons/icons"
+import { ArrowDownRightIcon, CursorLeftDownIcon, CursorRightDownIcon, IntersectIcon } from "config/icons/icons"
+import { useEffect, useState } from "react"
 import * as S from "./style"
 
 export const Campaign = () => {
-	const data = [
-		{
-			id: 1,
-			title: "Achieve Goals",
-			description: "Setting goals is like creating a roadmap to our dreams. They give us direction and purpose",
-		},
-		{
-			id: 2,
-			title: "Campaign Manage",
-			description: " Set clear and measurable objectives for your campaign. Know what you want to achieve.",
-		},
-		{
-			id: 3,
-			title: "Brand Development",
-			description:
-				"We build a strong personal brand identity with consistent writing style, visual appearance, and values.",
-		},
-	]
+	const [campaignsList, setCampaignsList] = useState<{ id: number; title: string; description: string }[]>([])
+
+	useEffect(() => {
+		const getData = async () => {
+			try {
+				const data = await getCampaignsList()
+				setCampaignsList(data)
+			} catch (error) {
+				window.alert(error)
+			}
+		}
+
+		getData()
+	}, [])
 
 	return (
 		<S.CampaignContainer>
@@ -56,8 +48,8 @@ export const Campaign = () => {
 					</S.CampaignCircle>
 				</S.CampaingBoxCircle>
 				<S.CampaignScreenMediumOnly>
-					{data.length &&
-						data.map(item => (
+					{campaignsList.length &&
+						campaignsList.map(item => (
 							<Card
 								key={item.id}
 								title={item.title}
@@ -67,8 +59,8 @@ export const Campaign = () => {
 						))}
 				</S.CampaignScreenMediumOnly>
 				<S.CampaignSmallScreenOnly>
-					{data.length &&
-						data.map(item => (
+					{campaignsList.length &&
+						campaignsList.map(item => (
 							<Card
 								key={item.id}
 								title={item.title}

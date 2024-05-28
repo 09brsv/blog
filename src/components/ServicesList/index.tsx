@@ -1,7 +1,10 @@
 import { CaretDown } from "@phosphor-icons/react"
+import { getServicesList } from "actions"
 import { LineSpan } from "components/LineSpan"
-import { InstagramIcon, LinkedinIcon, LogoIcon, TwitterIcon } from "config/icons/icons"
+import { LogoIcon } from "config/icons/icons"
+import { useResizeObserver } from "hooks/useResizeObserver"
 import { useEffect, useState } from "react"
+import { dataSocialsNetwork } from "utils/social-networks"
 import * as S from "./style"
 
 export const ServicesList = () => {
@@ -26,22 +29,6 @@ export const ServicesList = () => {
 		}, 300)
 	}
 
-	const useResizeObserver = (callback: () => void) => {
-		useEffect(() => {
-			const handleResize = () => {
-				callback()
-			}
-
-			window.addEventListener("resize", handleResize)
-
-			return () => {
-				window.removeEventListener("resize", handleResize)
-			}
-		}, [callback])
-
-		return callback
-	}
-
 	const handleResize = () => {
 		if (window.screen.width >= 900) {
 			setIsMobile(window.innerWidth >= 900)
@@ -53,49 +40,16 @@ export const ServicesList = () => {
 	// Usa o hook useResizeObserver para monitorar o redimensionamento do DOM
 	useResizeObserver(handleResize)
 
-	const dataSocialsNetwork = [
-		{
-			id: 1,
-			name: "Twitter",
-			icon: TwitterIcon,
-		},
-		{
-			id: 2,
-			name: "Instagram",
-			icon: InstagramIcon,
-		},
-		{
-			id: 3,
-			name: "Linkedin",
-			icon: LinkedinIcon,
-		},
-	]
-
 	useEffect(() => {
-		const data = [
-			{
-				id: 1,
-				title: "Influencers",
-				items: ["Content", "About Inluencers", "Performance", "Work"],
-			},
-			{
-				id: 2,
-				title: "Service",
-				items: ["Upgrade Rate", "Copy Writing", "Vlogging", "Publishing"],
-			},
-			{
-				id: 3,
-				title: "Community",
-				items: ["Influencers Form", "Sharing Session", "Meet & Greet"],
-			},
-			{
-				id: 4,
-				title: "About",
-				items: ["Work on", "Profile", "Privacy"],
-			},
-		]
-
-		setServices(data)
+		const getData = async () => {
+			try {
+				const data = await getServicesList()
+				setServices(data)
+			} catch (error) {
+				window.alert(error)
+			}
+		}
+		getData()
 	}, [])
 
 	return (
@@ -134,7 +88,7 @@ export const ServicesList = () => {
 						</S.ServicesButton>
 						{((service.id === toggleItem.id && toggleItem.opened) || isMobile) && (
 							<S.ServicesListBox closed={fadeIn || !isMobile ? "" : "closed"}>
-								<LineSpan bgColor="var(--line-blue)" width="3px" height="6rem" direction="column" />
+								<LineSpan bgcolor="var(--line-blue)" width="3px" height="6rem" direction="column" />
 								<S.ServicesListItemWrapper>
 									{service.items.map(item => (
 										<S.ServicesListItem key={item}>{item}</S.ServicesListItem>

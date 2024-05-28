@@ -1,15 +1,30 @@
+import { getVlogsList } from "actions"
+import { useEffect, useState } from "react"
 import * as S from "./style"
 
-export const VlogList = ({ isInfiniteList }: { isInfiniteList?: boolean }) => {
-	const response = ["Influence & Followers", "Wedding Party", "Business Rxpansin", "Publishing Business"]
+export const VlogList = ({ isinfinitelist }: { isinfinitelist?: boolean }) => {
+	const [listVlogs, setListVlogs] = useState<string[]>([])
 
-	const data = isInfiniteList ? response.concat(response) : response.slice(0, 4)
+	useEffect(() => {
+		const getData = async () => {
+			try {
+				const data = await getVlogsList()
+				setListVlogs(data)
+			} catch (error) {
+				window.alert(error)
+			}
+		}
+		getData()
+	}, [])
+
+	if (!listVlogs) return null
+	const data = isinfinitelist ? listVlogs.concat(listVlogs) : listVlogs.slice(0, 4)
 
 	return (
-		<S.VlogListContainer isInfiniteList={isInfiniteList}>
+		<S.VlogListContainer isinfinitelist={isinfinitelist === true}>
 			<S.VlogFlatList>
-				{data.map(item => (
-					<S.VlogListItem selected={item === "Wedding Party" ? "true" : "false"} key={item}>
+				{data.map((item, idx) => (
+					<S.VlogListItem selected={item === "Wedding Party"} key={idx}>
 						{item}
 					</S.VlogListItem>
 				))}

@@ -40,13 +40,13 @@ export const Contact = () => {
 			</S.ContactWrapperCircle>
 			<S.ContactForm>
 				<S.ContactBoxInput>
-					<Check fill="var(--border)" textColor="var(--white)" size={24} />
+					<Check fill="var(--border)" textcolor="var(--white)" size={24} />
 					<span />
 					<S.ContactInput type="text" placeholder="Name" />
 				</S.ContactBoxInput>
 
 				<S.ContactBoxInput>
-					<Check fill="var(--border)" textColor="var(--white)" size={24} />
+					<Check fill="var(--border)" textcolor="var(--white)" size={24} />
 					<span />
 					<S.ContactInput type="text" placeholder="Email" />
 				</S.ContactBoxInput>

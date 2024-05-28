@@ -1,13 +1,13 @@
 import * as S from "./style"
 
 export const LineSpan = ({
-	bgColor,
+	bgcolor,
 	width,
 	height,
 	className,
 	direction = "row",
 }: {
-	bgColor?: string
+	bgcolor?: string
 	width?: string
 	height?: string
 	direction?: "row" | "column"
@@ -22,9 +22,9 @@ export const LineSpan = ({
 				flexDirection: className === "column" || className === "row" ? className : direction,
 			}}
 			className="line">
-			<S.CircleSpan bgColor={bgColor} className={className} />
-			<S.LineSpan bgColor={bgColor} width={width} height={height} className={className} />
-			<S.CircleSpan bgColor={bgColor} className={className} />
+			<S.CircleSpan bgcolor={bgcolor} className={className} />
+			<S.LineSpan bgcolor={bgcolor} width={width} height={height} className={className} />
+			<S.CircleSpan bgcolor={bgcolor} className={className} />
 		</div>
 	)
 }

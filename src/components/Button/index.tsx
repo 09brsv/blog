@@ -5,19 +5,19 @@ type TButton = {
 	children: ReactNode
 	style?: React.CSSProperties
 	className?: string
-	bgColor?: string
-	textColor?: string
-	borderColor?: string
+	bgcolor?: string
+	textcolor?: string
+	bordercolor?: string
 } & ButtonHTMLAttributes<HTMLButtonElement>
 
-export const Button = ({ children, bgColor, textColor, borderColor, style, className, ...props }: TButton) => {
+export const Button = ({ children, bgcolor, textcolor, bordercolor, style, className, ...props }: TButton) => {
 	return (
 		<S.Button
 			className={className}
 			style={style}
-			bgColor={bgColor}
-			textColor={textColor}
-			borderColor={borderColor}
+			bgcolor={bgcolor}
+			textcolor={textcolor}
+			bordercolor={bordercolor}
 			{...props}>
 			{children}
 		</S.Button>

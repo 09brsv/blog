@@ -1,19 +1,19 @@
 import styled from "styled-components"
 import { device } from "styles"
 
-export const VlogListContainer = styled.div<{ isInfiniteList?: boolean }>`
+export const VlogListContainer = styled.div<{ isinfinitelist: boolean }>`
 	border: 2px solid ${({ theme }) => theme.colors.white};
 	border-left: none;
 	margin: 3rem auto 1rem -5%;
 	overflow-x: hidden;
-	display: ${({ isInfiniteList }) => (isInfiniteList ? "block" : "none")};
+	display: ${({ isinfinitelist }) => (isinfinitelist ? "block" : "none")};
 
 	@media ${device.md} {
 		overflow-x: auto;
 		margin: auto;
 		border: 2px solid ${({ theme }) => theme.colors.white};
 		border-radius: 1.5rem;
-		display: ${({ isInfiniteList }) => (isInfiniteList ? "none" : "block")};
+		display: ${({ isinfinitelist }) => (isinfinitelist ? "none" : "block")};
 	}
 `
 
@@ -38,14 +38,14 @@ export const VlogFlatList = styled.ul`
 	}
 `
 
-export const VlogListItem = styled.li<{ selected: string }>`
-	color: ${({ theme, selected }) => (selected === "true" ? theme.colors.titleText : theme.colors.white)};
-	background: ${({ theme, selected }) => (selected === "true" ? theme.colors.white : theme.colors.blueBgLight)};
-	font-weight: ${({ selected }) => (selected === "true" ? "bold" : "normal")};
+export const VlogListItem = styled.li<{ selected: boolean }>`
+	color: ${({ theme, selected }) => (selected ? theme.colors.titleText : theme.colors.white)};
+	background: ${({ theme, selected }) => (selected ? theme.colors.white : theme.colors.blueBgLight)};
+	font-weight: ${({ selected }) => (selected ? "bold" : "normal")};
 	border-left: 3px solid ${({ theme }) => theme.colors.white};
-	border-radius: ${({ selected }) => (selected === "true" ? "1.5rem 0 0 1.5rem" : "1.5rem")};
-	margin-right: ${({ selected }) => (selected === "true" ? "-.7rem" : "0")};
-	padding: ${({ selected }) => (selected === "true" ? ".5rem 1.5rem" : ".5rem 1rem")};
+	border-radius: ${({ selected }) => (selected ? "1.5rem 0 0 1.5rem" : "1.5rem")};
+	margin-right: ${({ selected }) => (selected ? "-.7rem" : "0")};
+	padding: ${({ selected }) => (selected ? ".5rem 1.5rem" : ".5rem 1rem")};
 	font-size: 0.8em;
 	white-space: nowrap;
 	text-overflow: ellipsis;

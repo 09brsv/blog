@@ -12,8 +12,8 @@ export const Navigation = () => {
 					<S.NavigationTitle>We are Prioritizes Mutual Development</S.NavigationTitle>
 					<S.NavigationBoxText>
 						<p style={{ letterSpacing: ".3px" }}>Let's build and succeed together with the services we provide</p>
-						<LineSpan className="column" width="2px" bgColor="var(--line-blue)" height="5rem" />
-						<LineSpan className="row" width="6rem" bgColor="var(--line-blue)" />
+						<LineSpan className="column" width="2px" bgcolor="var(--line-blue)" height="5rem" />
+						<LineSpan className="row" width="6rem" bgcolor="var(--line-blue)" />
 						<Button>contact us</Button>
 					</S.NavigationBoxText>
 				</S.NavigationWrapper>
