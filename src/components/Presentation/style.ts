@@ -26,7 +26,10 @@ export const ContainerPresentationDescription = styled.div`
 	flex-direction: column;
 	align-items: self-start;
 	gap: 1rem;
-	padding-left: 3rem;
+
+	@media ${device.xl} {
+		padding-left: 3rem;
+	}
 `
 
 export const ContainerPresentationWrapper = styled.div`

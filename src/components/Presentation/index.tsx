@@ -9,7 +9,7 @@ export const Presentation = () => {
 			<S.ContainerPresentation>
 				<S.ContainerPresentationDescription>
 					<h1>Let's turn your vlogging passion</h1>
-					<p style={{ fontSize: "16px" }} className="description">
+					<p style={{ fontSize: "1em" }} className="description">
 						Join Us on Our Blog and Enjoy <strong style={{ color: "#66B2C2" }}>High-Quality Content</strong> that
 						Inspires and Provides Solutions
 					</p>
