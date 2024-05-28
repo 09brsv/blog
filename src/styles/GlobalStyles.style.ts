@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components"
+import { device } from "./Breakpoints.style"
 
 export const CssGlobal = createGlobalStyle`
  
@@ -40,5 +41,10 @@ export const CssGlobal = createGlobalStyle`
     text-align: center;
     color: ${({ theme }) => theme.colors.titleText};
     text-transform: uppercase;
+
+    @media ${device.md} {
+			font-size: 2.2em;
+      margin-right: 13rem;
+    }
   }
 `

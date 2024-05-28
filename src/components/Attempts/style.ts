@@ -1,10 +1,16 @@
 import styled from "styled-components"
+import { device } from "styles"
 
 export const AttemptsContainer = styled.div`
 	padding: 2rem 1rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	@media ${device.md} {
+		justify-content: flex-start;
+		gap: 5rem;
+	}
 `
 
 export const AttemptsBox = styled.div`
@@ -23,11 +29,11 @@ export const AttemptsQuantity = styled.p`
 export const AttemptsDescription = styled.p`
 	color: ${({ theme }) => theme.colors.primaryText};
 	text-transform: uppercase;
-  font-size: 0.5em;
+	font-size: 0.5em;
 `
 
 export const AttemptsOperator = styled.span`
-	font-size: .7em;
+	font-size: 0.7em;
 	font-family: ${({ theme }) => theme.fonts.roboto};
 	color: ${({ theme }) => theme.colors.blueBgLight};
 `

@@ -16,10 +16,10 @@ export const Advantages = ({ text, radius }: { text: string; radius: number }) =
 						{letter}
 					</S.AdvantagesCircularText>
 				))}
-				<OvalCircle rotate={-45} />
-				<S.AdvantagesWrapperArrow>
-					<CurvedArrowRightDownIcon width={75} />
-				</S.AdvantagesWrapperArrow>
+			</S.AdvantagesCircularTextContainer>
+			<S.AdvantagesArrow width={65} />
+			<S.AdvantagesWrapperCircle>
+				<OvalCircle style={{ width: "185px", height: "230px", borderRadius: "44%" }} />
 				<S.AdvantagesWrapper>
 					<S.AdvantagesWrapperList>
 						{listAdvantages.map((item, index) => (
@@ -30,7 +30,7 @@ export const Advantages = ({ text, radius }: { text: string; radius: number }) =
 						))}
 					</S.AdvantagesWrapperList>
 				</S.AdvantagesWrapper>
-			</S.AdvantagesCircularTextContainer>
+			</S.AdvantagesWrapperCircle>
 		</S.AdvantagesContainer>
 	)
 }

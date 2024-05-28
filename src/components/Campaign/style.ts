@@ -1,12 +1,18 @@
 import { Button } from "components/Button"
-import { RectangleMediumRightIcon } from "config/icons/icons"
+import { RectangleMediumRightIcon, RectangleSmallRightIcon } from "config/icons/icons"
 import styled from "styled-components"
+import { device } from "styles"
 
 export const CampaignContainer = styled.div`
 	position: relative;
 	padding-top: ${({ theme }) => theme.paddings.pageTop};
 	padding-bottom: 3rem;
-  margin-right: 2rem;
+	margin-right: 2rem;
+
+	@media ${device.md} {
+		padding-right: 3rem;
+		padding-left: 3rem;
+	}
 `
 
 export const CampaignWrapper = styled.div`
@@ -23,7 +29,7 @@ export const CampaignWrapper = styled.div`
 export const CampaignBoxDescription = styled.div`
 	display: flex;
 	align-items: end;
-	justify-content: center;
+	justify-content: space-evenly;
 	gap: 2.5rem;
 	padding: 0 2rem 2rem 2rem;
 `
@@ -37,10 +43,31 @@ export const CampaignDescription = styled.p`
 export const CampaignCardContainer = styled.div`
 	display: flex;
 	position: relative;
-	align-items: center;
+	align-items: end;
 	justify-content: center;
 	padding: 2rem 0;
 	flex-direction: column;
+
+	@media ${device.md} {
+		flex-direction: row;
+		justify-content: space-between;
+		margin-bottom: 5rem;
+		align-items: center;
+	}
+`
+
+export const CampaignScreenMediumOnly = styled.div`
+	display: none;
+
+	@media ${device.md} {
+		display: flex;
+	}
+`
+
+export const CampaignSmallScreenOnly = styled.div`
+	@media ${device.md} {
+		display: none;
+	}
 `
 
 export const CampaignWrapperLine = styled.div`
@@ -53,39 +80,67 @@ export const CampaignWrapperLine = styled.div`
 	border-radius: ${({ theme }) => theme.radius.container};
 	border: 3px solid ${({ theme }) => theme.colors.border};
 
-  &::after {
-    content: "";
-    position: absolute;
-    right: -2%;
-    bottom: 20rem;
-    width: 100px;
-    height: 100%;
-    background: white;
-  }
+	&::after {
+		content: "";
+		position: absolute;
+		right: -2%;
+		bottom: 20rem;
+		width: 100px;
+		height: 100%;
+		background: white;
+	}
+
+	@media ${device.md} {
+		width: 85%;
+		top: 3rem;
+		height: 97%;
+		border-top: none;
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			height: 50px;
+			left: -2%;
+			background-color: var(--white);
+		}
+	}
 `
 
 export const CampaignRectangleLine = styled(RectangleMediumRightIcon)`
-  position: absolute;
-  left: -2rem;
-  top: 35%;
-  width: 70px;
+	position: absolute;
+	left: -2rem;
+	top: 35%;
+	width: 70px;
 `
 
 export const CampaignButtonLine = styled(Button)`
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -1rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -1rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
 `
 
 export const CampaingBoxCircle = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-  margin-bottom: 2rem;
-  margin-right: 0;
+	margin-bottom: 2rem;
+	margin-right: 0;
+`
+
+export const CampaignRectangleSmallRight = styled(RectangleSmallRightIcon)`
+	display: none;
+
+	@media ${device.md} {
+		display: block;
+		position: absolute;
+		top: 23%;
+		left: -1%;
+		z-index: 2;
+	}
 `
 
 export const CampaignCircle = styled.div`
@@ -103,10 +158,10 @@ export const CampaignBifurcation = styled.div`
 	flex-direction: column;
 	position: absolute;
 	top: 2.5rem;
-	left: -.5rem;
+	left: -0.5rem;
 	width: 40px;
 	height: 90px;
 	box-shadow: 0 0 0 4px white;
 	border-radius: 50%;
-  background-color: ${({ theme }) => theme.colors.white};
+	background-color: ${({ theme }) => theme.colors.white};
 `

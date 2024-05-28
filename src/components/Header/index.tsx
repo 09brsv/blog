@@ -20,11 +20,13 @@ export const Header = () => {
 				onKeyUp={handleClick}>
 				X
 			</strong>
-			<MobileMenuIcon
-				style={{ cursor: "pointer", display: isOpen ? "none" : "block" }}
-				onClick={handleClick}
-				onKeyUp={handleClick}
-			/>
+			<S.HeaderBoxMobile>
+				<MobileMenuIcon
+					style={{ cursor: "pointer", display: isOpen ? "none" : "block" }}
+					onClick={handleClick}
+					onKeyUp={handleClick}
+				/>
+			</S.HeaderBoxMobile>
 		</S.Header>
 	)
 }

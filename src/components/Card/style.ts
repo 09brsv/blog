@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const Card = styled.div<{ border?: string }>`
   border: 3px solid ${({ theme }) => theme.colors.border};
   border-radius: 2rem;
-  height: 280px;
+  height: 300px;
   width: 225px;
   background-color: ${({ theme }) => theme.colors.white};
   

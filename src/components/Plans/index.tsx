@@ -2,6 +2,7 @@ import { Button } from "components/Button"
 import { Card } from "components/Card"
 import { Check } from "components/Check"
 import { LineSpan } from "components/LineSpan"
+import { RectangleSmallLeftIcon } from "config/icons/icons"
 import * as S from "./style"
 
 export const Plans = () => {
@@ -43,7 +44,11 @@ export const Plans = () => {
 
 	return (
 		<S.PlansContainer>
-			<h1 style={{ padding: "0 1.5rem" }}>Choose a Package According to Your Needs</h1>
+			<S.PlansBoxIconOnlySmall>
+				<S.PlansRectangleSmallLeft />
+				<h1 style={{ padding: "0 1.5rem" }}>Choose a Package According to Your Needs</h1>
+				<S.PlansRectangleSmallLeft />
+			</S.PlansBoxIconOnlySmall>
 			<S.PlansCardContainer>
 				{data.map((plan, index) => {
 					setStyleButton(index)
@@ -51,19 +56,19 @@ export const Plans = () => {
 						<S.PlansCardBox key={plan.id}>
 							<Card
 								title={plan.title}
-								style={{ border: "3px solid var(--blue-bg-dark)" }}
+								style={{ border: "3px solid var(--blue-bg-dark)", position: "relative" }}
 								className={index === 1 ? "second-card" : ""}>
 								<S.PlansBoxItems>
 									{plan.items.map((item, idx) => (
 										<S.PlansItem key={idx}>
-											<Check fill={index === 1 ? "var(--white)" : "var(--blue-bg-light)"} />
+											<Check fill={index === 1 ? "var(--white)" : "var(--blue-bg-light)"} size={20} />
 											<small />
 											<span style={{ marginLeft: ".5rem" }}>{item}</span>
 										</S.PlansItem>
 									))}
 								</S.PlansBoxItems>
-								<LineSpan bgColor="var(--border)" width="60%" />
 								<S.PlansPrice>
+									<LineSpan bgColor="var(--border)" width="60%" />
 									{Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(
 										plan.price,
 									)}

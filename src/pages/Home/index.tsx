@@ -1,6 +1,5 @@
 import {
 	Advantages,
-	Attempts,
 	Campaign,
 	Contact,
 	Footer,
@@ -18,11 +17,8 @@ const Home = () => {
 		<S.HomeContainer>
 			<Header />
 			<main>
-				<section>
-					<div>
-						<Presentation />
-						<Attempts />
-					</div>
+				<section className="section-presentation">
+					<Presentation />
 					<Advantages text="Our Advantages" radius={150} />
 				</section>
 				<section>

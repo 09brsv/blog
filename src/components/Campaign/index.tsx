@@ -1,5 +1,11 @@
 import { Card } from "components/Card"
-import { ArrowDownRightIcon, CursorLeftDownIcon, CursorRightDownIcon, IntersectIcon } from "config/icons/icons"
+import {
+	ArrowDownRightIcon,
+	CursorLeftDownIcon,
+	CursorRightDownIcon,
+	IntersectIcon,
+	RectangleSmallRightIcon,
+} from "config/icons/icons"
 import * as S from "./style"
 
 export const Campaign = () => {
@@ -25,7 +31,7 @@ export const Campaign = () => {
 	return (
 		<S.CampaignContainer>
 			<S.CampaignWrapper />
-			<h1>Improve your Business</h1>
+			<h1 style={{ textAlign: "left", margin: 0 }}>Improve your Business</h1>
 			<S.CampaignBoxDescription>
 				<ArrowDownRightIcon width={70} />
 				<S.CampaignDescription>
@@ -39,6 +45,7 @@ export const Campaign = () => {
 					<S.CampaignButtonLine>view more</S.CampaignButtonLine>
 				</S.CampaignWrapperLine>
 				<S.CampaingBoxCircle>
+					<S.CampaignRectangleSmallRight width={100} />
 					<S.CampaignCircle />
 					<S.CampaignCircle style={{ marginLeft: "-1.5rem" }}>
 						<S.CampaignBifurcation>
@@ -48,15 +55,28 @@ export const Campaign = () => {
 						</S.CampaignBifurcation>
 					</S.CampaignCircle>
 				</S.CampaingBoxCircle>
-				{data.length &&
-					data.map(item => (
-						<Card
-							key={item.id}
-							title={item.title}
-							description={item.description}
-							style={{ marginRight: ".7rem", placeSelf: "end" }}
-						/>
-					))}
+				<S.CampaignScreenMediumOnly>
+					{data.length &&
+						data.map(item => (
+							<Card
+								key={item.id}
+								title={item.title}
+								description={item.description}
+								style={{ marginRight: ".7rem", placeSelf: "end" }}
+							/>
+						))}
+				</S.CampaignScreenMediumOnly>
+				<S.CampaignSmallScreenOnly>
+					{data.length &&
+						data.map(item => (
+							<Card
+								key={item.id}
+								title={item.title}
+								description={item.description}
+								style={{ marginRight: ".7rem", placeSelf: "end" }}
+							/>
+						))}
+				</S.CampaignSmallScreenOnly>
 			</S.CampaignCardContainer>
 		</S.CampaignContainer>
 	)

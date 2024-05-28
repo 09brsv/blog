@@ -15,8 +15,18 @@ export const NavList = styled.ul<{ isopen: string }>`
   transform: ${({ isopen }) => (isopen === "true" ? "translateX(0)" : "translateX(500%)")};
   transition: transform 0.5s ease-in-out;
 
+  & :last-child {
+    & button {
+      padding: .5rem 0.9rem; text-transform: none
+    }
+  }
+
   @media ${device.md} {
     flex-direction: row;
+    transform: translateX(0);
+    & button {
+      margin-left: 5rem
+    }
   }
 `
 
