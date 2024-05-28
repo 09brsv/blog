@@ -1,0 +1,19 @@
+{
+	"listBenefits": [
+		{
+			"id": 1,
+			"title": "Achieve Goals",
+			"description": "Setting goals is like creating a roadmap to our dreams. They give us direction and purpose"
+		},
+		{
+			"id": 2,
+			"title": "Campaign Manage",
+			"description": " Set clear and measurable objectives for your campaign. Know what you want to achieve."
+		},
+		{
+			"id": 3,
+			"title": "Brand Development",
+			"description": "We build a strong personal brand identity with consistent writing style, visual appearance, and values."
+		}
+	]
+}

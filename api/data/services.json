@@ -1,0 +1,24 @@
+{
+	"services": [
+		{
+			"id": 1,
+			"title": "Influencers",
+			"items": ["Content", "About Inluencers", "Performance", "Work"]
+		},
+		{
+			"id": 2,
+			"title": "Service",
+			"items": ["Upgrade Rate", "Copy Writing", "Vlogging", "Publishing"]
+		},
+		{
+			"id": 3,
+			"title": "Community",
+			"items": ["Influencers Form", "Sharing Session", "Meet & Greet"]
+		},
+		{
+			"id": 4,
+			"title": "About",
+			"items": ["Work on", "Profile", "Privacy"]
+		}
+	]
+}

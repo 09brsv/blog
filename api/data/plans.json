@@ -1,0 +1,32 @@
+{
+	"listPlans": [
+		{
+			"id": 1,
+			"title": "Basic",
+			"price": 56,
+			"items": ["Singel Post Package", "Story Package", "Collaboration Package"]
+		},
+		{
+			"id": 2,
+			"title": "Basic",
+			"price": 120,
+			"items": [
+				"6 Post Package",
+				"Story Package",
+				"Collaboration Package",
+				"Free Second Week"
+			]
+		},
+		{
+			"id": 3,
+			"title": "Basic",
+			"price": 56,
+			"items": [
+				"12 Post Package",
+				"12 Story Package",
+				"Collaboration Package",
+				"Free Second Week"
+			]
+		}
+	]
+}

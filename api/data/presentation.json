@@ -1,0 +1,12 @@
+{
+	"attempts": [
+		{
+			"reviews": 35.2,
+			"Customers": 20000,
+			"Agency Rate": 89,
+			"year": "2016"
+		}
+	],
+
+	"advantages": ["trusted", "actual", "professional", "actual"]
+}
