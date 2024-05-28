@@ -15,7 +15,7 @@ Este é um projeto de teste técnico para uma vaga de front-end júnior. Consist
 
 Você pode acessar o projeto em [https://blog-bruno-batista-s-projects.vercel.app](https://blog-bruno-batista-s-projects.vercel.app).
 
-## Scripts
+## Scripts necessários para rodar o projeto em uma máquina local
 
 ### Front-end
 
